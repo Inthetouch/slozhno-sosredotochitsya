@@ -3,3 +3,33 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+.header {
+  background-color: #FF0070;
+  background-size: auto 768px;
+  padding: 20px;
+}
+
+.decorated-zone {
+  background-image: url(../images/cover-image-dark.png);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 13px;
+}
+
+.header__theme-menu-button {
+  color: #FF0070;
+  text-align: center;
+  font-family: IBM Plex Mono, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  background: none;
+  border: transparent;
+  cursor: pointer;
+  margin: 2.5px 12px;
+}
