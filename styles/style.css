@@ -115,6 +115,13 @@
 .section {
   display: flex;
   flex-direction: row;
+  gap: 20px;
+}
+
+.section__content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .section__title {
@@ -124,6 +131,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
+  min-width: 314.96px;
 }
 
 .cards__title {
