@@ -5,9 +5,5 @@
 */
 
 .page.theme_dark {
-  --header-text-color: #FF0070;
-  --main-page-color: #000028;
-  --main-page-image: url(../images/cover-image-dark.png);
-  --page-font-family: IBM Plex Mono, sans-serif;
-  --header-title-color: #DB00FF;
+
 }

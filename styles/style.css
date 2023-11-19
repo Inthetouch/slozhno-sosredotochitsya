@@ -1,11 +1,17 @@
 .page {
-  background: var(--main-page-image) no-repeat center / cover, var(--main-page-color);
+  background: #000028 url(../images/cover-image-dark.png) no-repeat center / cover;
   background-size: auto 768px;
   background-attachment: fixed;
+  
 }
 
 .header {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(1, minmax(auto, 1024px));
+  justify-content: center;
   padding: 20px;
+  gap: 10px;
 }
 
 .decorated-zone::before {
@@ -13,34 +19,46 @@
   width: 25px;
   height: 25px;
   position: absolute;
-  border-block-start: 1px solid var(--header-text-color);
-  border-inline-end: 1px solid var(--header-text-color);
-  top: 20px;
-  left: 979px;
+  border-block-end: 1px solid #FF0070;
+  border-inline-start: 1px solid #FF0070;
+  bottom: 20px;
+  left: 20px;
 }
 
-.decorated-zone::after {
-  content: "";
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  border-block-end: 1px solid var(--header-text-color);
-  border-inline-start: 1px solid var(--header-text-color);
-  bottom: 8px;
-  left: 10px;
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-block-end: 274px;
+}
+
+.header__theme-menu-button {
+  color: #FF0070;
+  text-align: center;
+  font-family: IBM Plex Mono, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  background: none;
+  text-transform: lowercase;
+  cursor: pointer;
+  border: transparent;
+  margin: 2.5px 12px;
 }
 
 .header__rec {
-  color: var(--header-text-color);
-  position: absolute;
-  text-transform: uppercase;
-  top: 21px;
-  right: 49px;
-  font-family: var(--page-font-family);
+  color: #FF0070;
+  text-align: center;
+  font-family: IBM Plex Mono, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
+  position: absolute;
+  right: 49px;
+  top: 20px;
+  text-transform: uppercase;
 }
 
 .header__rec::before {
@@ -48,107 +66,42 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  background: var(--header-text-color);
+  background: #FF0070;
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--header-text-color);
-  margin: 8px 0 0 40px;
+  left: 38px;
+  top: 8px;
+  box-shadow: 0 0 4px 2px #FF0070;
 }
 
-.header__theme-menu-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.header__theme-menu-button {
-  color: var(--header-text-color);
-  text-align: center;
-  font-family: var(--page-font-family);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 18px;
-  background: none;
-  border: transparent;
-  cursor: pointer;
-  margin: 2.5px 12px;
-  text-transform: lowercase;
-}
-
-.header__title-block {
-  display: flex;
-  flex-direction: column;
-  margin: 270px 0 134px 0;
-  gap: 114px;
+.header__rec::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-block-start: 1px solid #FF0070;
+  border-inline-end: 1px solid #FF0070;
 }
 
 .header__title {
-  color: var(--header-title-color);
-  text-shadow: 4px 4px 0px var(--header-text-color);
-  font-family: var(--page-font-family);
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  color: #DB00FF;
+  text-shadow: 4px 4px 0px #FF0070;
+  font-family: IBM Plex Mono, sans-serif;
+  font-size: 157px;
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
-  margin-inline-start: -20px;
+  justify-self: start;
 }
 
 .header__title-text {
   color: #000028;
-  font-family: var(--page-font-family);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 23.4px;
-  background: var(--header-text-color);
-  width: 50%;
-  align-self: flex-end;
-}
-
-.main {
-  display: flex;
-  width: 1024px;
-  padding: 0px 20px;
-  flex-direction: column;
-  align-items: center;
-}
-
-.section {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
-.section__content-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.section__title {
-  color: #FF0070;
-  font-family: var(--page-font-family);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 23.4px;
-  min-width: 314.96px;
-}
-
-.cards__title {
-  color: #000028;
-  font-family: var(--page-font-family);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 23.4px; 
   background-color: #FF0070;
-}
-
-.cards__content {
-  color: #F1B2CE;
-  font-family: var(--page-font-family);
+  font-family: IBM Plex Mono, sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 23.4px;
+  justify-self: end;
+  width: 48%;
 }
+
