@@ -1,4 +1,17 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  /*dark theme color*/
+
+  --dark-color: #000028;
+  --light__pink-color: #F1B2CE;
+  --red-color: #FF0070;
+  --purple-color: #DB00FF;
+  --background__picture-dark: url(../images/cover-image-dark.png);
+  
+  /*light theme color*/
+
+  --dark-color-1: #353430;
+  --light__pink-color-1: #FFC2E6;
+  --pink-color: #FF8DCB;
+  --white-color: #FFF1F7;
+  --background__picture-light: url(../images/cover-image-light.png);
+}

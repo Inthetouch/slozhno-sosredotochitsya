@@ -1,12 +1,27 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --background-color: var(--white-color);
+  --header-color: var(--light__pink-color-1);
+  --header__menu-color: var(--dark-color-1);
+  --main__title-color: var(--dark-color-1);
+  --background__text-color: var(--pink-color);
+  --background__cards-color: var(--dark-color-1);
+  --header__picture: var(--background__picture-light);
+  --decorate__element-color: var(--white-color);
+  --text-shadow: var(--red-color);
+  --header__title-text: var(--dark-color-1);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: var(--white-color);
+    --header-color: var(--light__pink-color-1);
+    --header__menu-color: var(--dark-color-1);
+    --main__title-color: var(--dark-color-1);
+    --background__text-color: var(--pink-color);
+    --background__cards-color: var(--white-color);
+    --header__picture: var(--background__picture-light);
+    --decorate__element-color: var(--white-color);
+    --text-shadow: var(--red-color);
+    --header__title-text: var(--dark-color-1);
+  }
 }
