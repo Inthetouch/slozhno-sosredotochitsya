@@ -9,6 +9,7 @@
   --background__text-color: var(--red-color);
   --background__cards-color: var(--light__pink-color);
   --main__title-color: var(--red-color);
+  --font-family: IBM Plex Mono, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,5 +24,6 @@
     --decorate__element-color: var(--red-color);
     --text-shadow: var(--red-color);
     --header__title-text: var(--dark-color);
+    --font-family: IBM Plex Mono, sans-serif;
   }
 }

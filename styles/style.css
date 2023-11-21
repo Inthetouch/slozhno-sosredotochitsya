@@ -8,6 +8,13 @@
   background-attachment: fixed;
 }
 
+@media (width <= 1000px) {
+  .page {
+    align-items: normal;
+    background-size: auto 1024px;
+  }
+}
+
 .header {
   display: grid;
   grid-template-rows: repeat(3, auto);
@@ -32,6 +39,12 @@
   left: 20px;
 }
 
+@media (width <= 1000px) {
+  .decorated-zone::before {
+    bottom: 0px;
+  }
+}
+
 .decorated-zone::after {
   content: "";
   position: absolute;
@@ -51,6 +64,15 @@
   margin-block-end: 274px;
 }
 
+@media (width <= 768px) {
+  .header__theme-menu-list {
+    flex-direction: column;
+    align-items: end;
+    margin-block-end: 171px;
+    margin-block-start: 170px;
+  }
+}
+
 .header__theme-menu-item {
   display: inline-flex;
   align-items: center;
@@ -59,7 +81,7 @@
 
 .header__theme-menu-button {
   color: var(--header__menu-color);
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: var(--font-family);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -94,7 +116,7 @@
 .header__rec {
   color: var(--decorate__element-color);
   text-align: center;
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: var(--font-family);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -120,7 +142,7 @@
 .header__title {
   color: var(--header-color);
   text-shadow: 4px 4px 0px var(--text-shadow);
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
   font-weight: 700;
@@ -129,10 +151,16 @@
   margin-block-end: 114px;
 }
 
+@media (height > 768px) {
+  .header__title {
+    margin-block-end: 168px;
+  }
+}
+
 .header__title-text {
   color: var(--header__title-text);
   background-color: var(--background__text-color);
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: var(--font-family);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -159,12 +187,18 @@
 
 .section__title {
   color: var(--main__title-color);
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: var(--font-family);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
   max-width: 315px;
+}
+
+@media (width <= 768px) {
+  .section__title {
+    max-width: 236px; 
+  }
 }
 
 .section__content-list {
@@ -181,7 +215,7 @@
 
 .cards__title {
   color: var(--header__title-text);
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: var(--font-family);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -189,19 +223,9 @@
   background: var(--background__text-color);
 }
 
-.cards__title-second {
-  color: var(--header__title-text);
-  font-family: IBM Plex Mono, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 23.4px;
-  background: var(--background__text-color);
-}
-
 .cards__content {
   color: var(--background__cards-color);
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: var(--font-family);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -241,6 +265,38 @@
   gap: 20px;
 }
 
+@media (width <= 768px) {
+  .second__content-list {
+    flex-direction: column;
+  }
+}
+
+.cards__title-second {
+  color: var(--header__title-text);
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
+  background: var(--background__text-color);
+}
+
+.cards__content-second {
+  color: var(--background__cards-color);
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
+  max-width: 650px;
+}
+
+@media (width <= 768px) {
+  .cards__content-second {
+    max-width: 728px;
+  }
+}
+
 .section__picture {
   display: flex;
   flex-direction: column;
@@ -251,7 +307,7 @@
 
 .picture__title {
   color: var(--header__title-text);
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: var(--font-family);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -314,6 +370,12 @@
   position: relative;
 }
 
+@media (height > 768px) {
+  .footer {
+    min-height: 1024px;
+  }
+}
+
 .decorated-footer::before {
   content: "";
   width: 25px;
@@ -339,7 +401,7 @@
 .footer__title {
   color: var(--header-color);
   text-shadow: 2px 2px 0px var(--text-shadow);
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
   font-weight: 700;

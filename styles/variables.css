@@ -6,6 +6,7 @@
   --red-color: #FF0070;
   --purple-color: #DB00FF;
   --background__picture-dark: url(../images/cover-image-dark.png);
+  --font-family: IBM Plex Mono, sans-serif;
   
   /*light theme color*/
 
@@ -14,4 +15,5 @@
   --pink-color: #FF8DCB;
   --white-color: #FFF1F7;
   --background__picture-light: url(../images/cover-image-light.png);
+  --font-family: IBM Plex Mono, sans-serif;
 }
