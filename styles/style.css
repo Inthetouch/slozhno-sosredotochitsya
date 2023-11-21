@@ -209,6 +209,25 @@
   max-width: 650px;
 }
 
+.cards__content-link {
+  text-decoration: none;
+  text-shadow: 1px 1px 0px var(--background__text-color);
+}
+
+.cards__content-link:focus {
+  outline: none;
+}
+
+.cards__content-link:focus-visible {
+  border-bottom: 1px solid transparent;
+  border-color: currentColor;
+}
+
+.cards__content-link:hover {
+  border: 1px solid transparent;
+  border-color: var(--background__text-color);
+}
+
 .second__section {
   display: flex;
   flex-direction: column;
