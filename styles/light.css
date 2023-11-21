@@ -18,7 +18,7 @@
     --header__menu-color: var(--dark-color-1);
     --main__title-color: var(--dark-color-1);
     --background__text-color: var(--pink-color);
-    --background__cards-color: var(--white-color);
+    --background__cards-color: var(--dark-color-1);
     --header__picture: var(--background__picture-light);
     --decorate__element-color: var(--white-color);
     --text-shadow: var(--red-color);
