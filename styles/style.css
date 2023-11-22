@@ -80,8 +80,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  margin-block-end: 270px;
+  gap: 18px;
+  margin-block-end: 266px;
 }
 
 @media (width <= 768px) {
@@ -182,7 +182,8 @@
   font-weight: 700;
   line-height: 82.5%;
   justify-self: start;
-  margin-block-end: 110px;
+  margin-block-end: 106px;
+  margin-inline-start: -10px;
 }
 
 @media (height > 768px) {
