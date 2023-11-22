@@ -191,7 +191,7 @@
 @media (height > 768px) {
   .header__title {
     margin-block-end: 150px;
-    margin-inline-start: -5px;
+    margin-inline-start: -10px;
   }
 }
 
@@ -242,6 +242,12 @@
   display: flex;
   gap: 20px;
   padding: 40px 20px 60px 20px;
+}
+
+@media (height > 768px) {
+  .section {
+    padding: 40px 20px 70px 20px;
+  }
 }
 
 @media (width <= 375px) {
