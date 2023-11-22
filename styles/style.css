@@ -183,7 +183,7 @@
   line-height: 82.5%;
   justify-self: start;
   margin-block-end: 106px;
-  margin-inline-start: -10px;
+  margin-inline-start: -12px;
 }
 
 @media (height > 768px) {
@@ -209,7 +209,7 @@
   line-height: 23.4px;
   justify-self: end;
   width: 49.8%;
-  margin-block-end: 134px;
+  margin-block-end: 104px;
 }
 
 @media (width <= 375px) {
@@ -231,7 +231,7 @@
 .section {
   display: flex;
   gap: 20px;
-  padding: 40px 20px 80px 20px;
+  padding: 40px 20px 60px 20px;
 }
 
 @media (width <= 375px) {
