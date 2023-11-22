@@ -218,7 +218,7 @@
 
 @media (width <= 768px) {
   .header__title-text {
-    margin-block-end: 118px;
+    margin-block-end: 128px;
   }  
 }
 
@@ -466,6 +466,12 @@
 @media (height > 768px) {
   .footer {
     min-height: 1024px;
+  }
+}
+
+@media (height <= 768px) {
+  .footer {
+    padding: 20px 20px 0;
   }
 }
 
