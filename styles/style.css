@@ -65,8 +65,8 @@
   height: 25px;
   border-block-start: 1px solid var(--header__menu-color);
   border-inline-end: 1px solid var(--header__menu-color);
-  right: 22px;
-  top: 18px
+  right: 20px;
+  top: 19px
 }
 
 @media (width <= 375px) {
@@ -80,8 +80,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
-  margin-block-end: 274px;
+  gap: 15px;
+  margin-block-end: 270px;
 }
 
 @media (width <= 768px) {
@@ -149,7 +149,7 @@
   font-weight: 400;
   line-height: 25px;
   position: absolute;
-  right: 49px;
+  right: 48px;
   top: 20px;
   text-transform: uppercase;
 }
@@ -182,7 +182,7 @@
   font-weight: 700;
   line-height: 82.5%;
   justify-self: start;
-  margin-block-end: 114px;
+  margin-block-end: 110px;
 }
 
 @media (height > 768px) {
