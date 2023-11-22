@@ -88,8 +88,9 @@
   .header__theme-menu-list {
     flex-direction: column;
     align-items: end;
-    margin-block-end: 171px;
+    margin-block-end: 167px;
     margin-block-start: 170px;
+    gap: 15px;
   }
 }
 
@@ -189,7 +190,8 @@
 
 @media (height > 768px) {
   .header__title {
-    margin-block-end: 168px;
+    margin-block-end: 150px;
+    margin-inline-start: -5px;
   }
 }
 
@@ -212,6 +214,12 @@
   justify-self: end;
   width: 49.8%;
   margin-block-end: 98px;
+}
+
+@media (width <= 375px) {
+  .header__title-text {
+    margin-block-end: 108px;
+}  
 }
 
 @media (width <= 375px) {
@@ -239,6 +247,7 @@
 @media (width <= 375px) {
   .section {
     flex-direction: column;
+    gap: 15px;
     padding: 30px 10px 50px;
   }
 }
