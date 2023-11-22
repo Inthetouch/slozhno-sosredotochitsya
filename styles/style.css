@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   background: var(--background-color) var(--header__picture) no-repeat center / cover;
-  background-size: auto 768px;
   background-attachment: fixed;
 }
 
