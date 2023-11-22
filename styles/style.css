@@ -195,7 +195,7 @@
 @media (width <= 375px) {
   .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    margin-block-end: 55px;
+    margin-block-end: 35px;
   }
 }
 
@@ -392,13 +392,19 @@
 .cards_picture {
   display: grid;
   grid-template-columns: repeat(3, minmax(auto, 1fr));
-  /* grid-template-rows: repeat(4, minmax(auto, 1fr)); */
   grid-template-areas: 
     "sunset sunset icecream"
     "tape book icecream"
     "tape street street"
     "tape street street";
   gap: 20px;;
+}
+
+@media (width <= 375px) {
+  .cards_picture {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .picture__sunset {
