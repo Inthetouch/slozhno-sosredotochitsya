@@ -9,7 +9,7 @@
   --decorate__element-color: var(--white-color);
   --text-shadow: var(--red-color);
   --header__title-text: var(--dark-color-1);
-  --font-family: IBM Plex Mono, sans-serif;
+  --font-family: "IBM Plex Mono", monospace;
 }
 
 @media (prefers-color-scheme: light) {
@@ -24,6 +24,6 @@
     --decorate__element-color: var(--white-color);
     --text-shadow: var(--red-color);
     --header__title-text: var(--dark-color-1);
-    --font-family: IBM Plex Mono, sans-serif;
+    --font-family: "IBM Plex Mono", monospace;
   }
 }
