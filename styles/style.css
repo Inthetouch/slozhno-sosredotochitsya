@@ -229,6 +229,7 @@
   line-height: 23.4px;
   justify-self: end;
   width: 49.8%;
+  align-self: start;
   margin-block-end: 98px;
   margin-inline-end: 3px;
 }
@@ -236,15 +237,13 @@
 @media (width <= 1020px) {
   .header__title-text {
     margin-block-end: 128px;
-    height: 48%;
   }  
 }
 
 @media (width <= 760px) {
   .header__title-text {
-    width: auto;
     margin-block-end: 47px;
-    height: 64%;
+    width: 100%;
   }  
 }
 
