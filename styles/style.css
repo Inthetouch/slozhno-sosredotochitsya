@@ -17,7 +17,7 @@
 .header {
   display: grid;
   grid-template-rows: repeat(3, auto);
-  grid-template-columns: repeat(1, minmax(auto, 980px));
+  grid-template-columns: repeat(1, minmax(auto, 1440px));
   justify-content: center;
   gap: 10px;
   padding: 20px;
@@ -42,7 +42,7 @@
   border-block-end: 1px solid var(--header__menu-color);
   border-inline-start: 1px solid var(--header__menu-color);
   bottom: 20px;
-  left: 15px;
+  left: 20px;
 }
 
 @media (width <= 1000px) and (width > 375px) {
@@ -83,8 +83,8 @@
   align-items: center;
   gap: 12px;
   margin-block-end: 266px;
-  margin-inline-start: -6px;
-  margin-block-start: -2px;
+  margin-inline-start: 2px;
+  margin-block-start: 0px;
 }
 
 @media (width <= 768px){
@@ -194,7 +194,7 @@
   line-height: 82.5%;
   justify-self: start;
   margin-block-end: 89px;
-  margin-inline-start: -25px;
+  margin-inline-start: -20px;
   margin-block-start: -15px;
 }
 
@@ -230,8 +230,8 @@
   justify-self: end;
   width: 49.8%;
   align-self: start;
-  margin-block-end: 98px;
-  margin-inline-end: 3px;
+  margin-block-end: 100px;
+  margin-inline-end: 1px;
 }
 
 @media (width <= 1020px) {
@@ -363,9 +363,16 @@
   font-style: normal;
   font-weight: 400;
   line-height: 23.4px;
-  max-width: 650px;
+  max-width: 1125px;
   margin-inline-start: -5px;
 }
+
+@media (width <= 1024px) {
+  .cards__content {
+    max-width: 650px;
+  }
+}
+
 
 .cards__content-link {
   text-decoration: none;
@@ -391,7 +398,7 @@
   flex-direction: column;
   gap: 15px;
   padding: 0 20px 40px 20px;
-  max-width: 1024px;
+  max-width: 1440px;
   margin-block-start: -2px;
 }
 
@@ -497,7 +504,7 @@
 .section__picture {
   display: flex;
   flex-direction: column;
-  max-width: 1024px;
+  max-width: 1440px;
   gap: 20px;
   padding: 0 20px 40px 20px;
 }
@@ -587,6 +594,7 @@
   padding: 20px;
   position: relative;
   height: 100vh;
+  width: 100%;
 }
 
 @media (height > 768px) {
@@ -608,8 +616,8 @@
   position: absolute;
   border-block-end: 1px solid var(--header__menu-color);
   border-inline-start: 1px solid var(--header__menu-color);
-  bottom: 0;
-  left: 16px;
+  bottom: -2px;
+  left: 20px;
 }
 
 @media (width <= 760px) {
@@ -625,8 +633,8 @@
   height: 25px;
   border-block-start: 1px solid var(--header__menu-color);
   border-inline-end: 1px solid var(--header__menu-color);
-  right: 23px;
-  top: 41px;
+  right: 21px;
+  top: 42px;
 }
 
 @media (width <= 760px) {
@@ -643,7 +651,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
-  margin: 340px 256px 319px;
+  margin-block-start: 25px;
 }
 
 @media (width < 760px) {

@@ -11,3 +11,20 @@
   --main__title-color: var(--red-color);
   --font-family: "IBM Plex Mono", monospace;
 }
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: var(--dark-color);
+    --header__picture: var(--background__picture-dark);
+    --header__menu-color: var(--red-color);
+    --decorate__element-color: var(--red-color);
+    --header-color: var(--purple-color);
+    --text-shadow: var(--red-color);
+    --header__title-text: var(--dark-color);
+    --background__text-color: var(--red-color);
+    --background__cards-color: var(--light__pink-color);
+    --main__title-color: var(--red-color);
+    --font-family: "IBM Plex Mono", monospace;
+  }
+}
