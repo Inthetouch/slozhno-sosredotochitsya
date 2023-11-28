@@ -613,7 +613,7 @@
   }
 }
 
-/* .decorated-footer::before {
+.decorated-footer::before {
   content: "";
   width: 25px;
   height: 25px;
@@ -627,6 +627,7 @@
 @media (width <= 760px) {
   .decorated-footer::before {
     left: 10px;
+    bottom: 7px;
   }
 }
 
@@ -644,8 +645,9 @@
 @media (width <= 760px) {
   .decorated-footer::after {
     right: 10px;
+    top: 14px;
   }
-} */
+}
 
 .footer__title {
   color: var(--header-color);
