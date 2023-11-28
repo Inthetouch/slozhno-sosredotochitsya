@@ -3,7 +3,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--background-color) var(--header__picture) no-repeat center / cover;
+  background-image: var(--header__picture);
+  background-color: var(--background-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -609,7 +613,7 @@
   }
 }
 
-.decorated-footer::before {
+/* .decorated-footer::before {
   content: "";
   width: 25px;
   height: 25px;
@@ -641,7 +645,7 @@
   .decorated-footer::after {
     right: 10px;
   }
-}
+} */
 
 .footer__title {
   color: var(--header-color);
