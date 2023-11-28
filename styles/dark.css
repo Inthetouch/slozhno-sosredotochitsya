@@ -12,7 +12,6 @@
   --font-family: "IBM Plex Mono", monospace;
 }
 
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: var(--dark-color);
